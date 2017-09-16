@@ -1,0 +1,11 @@
+HTTP/1.1 200 OK
+Server: nginx
+Date: Wed, 13 Sep 2017 13:29:49 GMT
+Content-Type: text/plain; charset=utf-8
+Content-Length: 0
+Last-Modified: Wed, 12 Jul 2017 19:18:18 GMT
+Connection: keep-alive
+ETag: "596675fa-0"
+Strict-Transport-Security: max-age=15768000
+Accept-Ranges: bytes
+
