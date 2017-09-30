@@ -16,6 +16,12 @@
 			   js2-mode
 			   nodejs-repl
 			   popwin
+			   treemacs
+			   shell-pop
+			   spacemacs-theme
+			   spaceline
+			   mutil-term
+			   elpy
 			   ) "Default packages")
 (defun tristan/packages-installed-p ()
   (loop for pkg in tristan/packages
