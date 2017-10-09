@@ -20,8 +20,10 @@
 			   shell-pop
 			   spacemacs-theme
 			   spaceline
-			   mutil-term
+			   multi-term
 			   elpy
+			   magit
+			   org-trello
 			   ) "Default packages")
 (defun tristan/packages-installed-p ()
   (loop for pkg in tristan/packages
@@ -51,7 +53,7 @@
 
 ;;popwin 光标自动跳转新窗口
 (require 'popwin)
-(popwin-mode t)
+;;(popwin-mode t)
 
 
 ;;hacking search

@@ -14,10 +14,14 @@
 (require 'init-ui)
 (require 'init-better-defaults)
 (require 'init-org)
-
+(require 'init-python)
+(require 'init-popwin)
 (defun open-my-init-file()
   (interactive)
   (find-file "~/.emacs.d/init.el"))
+
+
+
 
 (setq custom-file (expand-file-name "lisp/custom.el" user-emacs-directory))
 (load-file custom-file)
