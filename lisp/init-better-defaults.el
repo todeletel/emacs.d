@@ -13,5 +13,5 @@
 (add-hook 'emacs-lisp-mode-hook 'show-paren-mode)
 ;;不知道干啥的
 ;;(setq url-automatic-caching t)
-
+(defalias 'yes-or-no-p 'y-or-n-p)
 (provide 'init-better-defaults)

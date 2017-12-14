@@ -13,10 +13,10 @@
 			   swiper
 			   counsel
 			   smartparens
-			   js2-mode
-			   nodejs-repl
+			   ;;js2-mode
+			   ;;nodejs-repl
 			   popwin
-			   treemacs
+			   ;;treemacs
 			   shell-pop
 			   spacemacs-theme
 			   spaceline

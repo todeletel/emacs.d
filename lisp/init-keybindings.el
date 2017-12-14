@@ -1,5 +1,5 @@
 ;;treemacs
-(global-set-key (kbd "<f8>") 'treemacs-toggle)
+;;(global-set-key (kbd "<f8>") 'treemacs-toggle)
 
 ;;swiper ---smart search plugin
 (global-set-key "\C-s" 'swiper)
@@ -35,9 +35,9 @@
 (global-set-key (kbd "<f9>") 'shell-pop)
 
 ;;magit
-(global-set-key (kbd "\C-c C-s") 'magit-status)
-(global-set-key (kbd "\C-c C-d") 'magit-diff)
-(global-set-key (kbd "\C-c C-p") 'magit-push)
+(global-set-key (kbd "\C-c m s") 'magit-status)
+(global-set-key (kbd "\C-c m d") 'magit-diff)
+(global-set-key (kbd "\C-c m p") 'magit-push)
 (provide 'init-keybindings)
 ;;helm-ag
 (global-set-key (kbd "C-c p s") 'helm-do-ag-project-root)
