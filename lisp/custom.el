@@ -10,6 +10,7 @@
  '(package-selected-packages
    (quote
     (magit multi-term spaceline spacemacs-theme youdao-dictionary treemacs thrift smartparens silkworm-theme popwin plan9-theme nodejs-repl monokai-theme hungry-delete elpy ein dumb-jump counsel caroline-theme)))
+ '(safe-local-variable-values (quote ((WORKON_HOME . /Users/sen-ele/virtualenv))))
  '(shell-pop-shell-type (quote ("shell" "*shell*" (lambda nil (multi-term))))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

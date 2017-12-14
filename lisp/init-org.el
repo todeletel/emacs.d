@@ -5,5 +5,6 @@
 
 (require 'org)
 (setq org-src-fontify-natively t)
-
+;;(setq org-log-done 'time)
+;;todo-log
 (provide 'init-org)

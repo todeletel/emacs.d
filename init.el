@@ -16,6 +16,8 @@
 (require 'init-org)
 (require 'init-python)
 (require 'init-popwin)
+(require 'init-magit)
+(require 'init-helm-ag)
 (defun open-my-init-file()
   (interactive)
   (find-file "~/.emacs.d/init.el"))

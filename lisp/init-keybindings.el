@@ -21,6 +21,7 @@
 (global-set-key "\C-cb" 'org-iswitchb)
 
 
+
 ;;set org-pomodoro
 (global-set-key (kbd "<f12>") 'org-pomodoro)
 
@@ -33,4 +34,10 @@
 ;;shell-pop
 (global-set-key (kbd "<f9>") 'shell-pop)
 
+;;magit
+(global-set-key (kbd "\C-c C-s") 'magit-status)
+(global-set-key (kbd "\C-c C-d") 'magit-diff)
+(global-set-key (kbd "\C-c C-a") 'magit-)
 (provide 'init-keybindings)
+;;helm-ag
+(global-set-key (kbd "C-c p s") 'helm-do-ag-project-root)
