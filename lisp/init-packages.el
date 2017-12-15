@@ -24,6 +24,7 @@
 			   elpy
 			   magit
 			   helm-ag
+			   nyan-mode
 			   ;;org-trello
 			   ) "Default packages")
 (defun tristan/packages-installed-p ()

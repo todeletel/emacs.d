@@ -1,4 +1,5 @@
 
+
 (setq make-backup-files nil)
 (setq auto-save-default nil)
 
@@ -15,3 +16,7 @@
 ;;(setq url-automatic-caching t)
 (defalias 'yes-or-no-p 'y-or-n-p)
 (provide 'init-better-defaults)
+;;nyan mode
+(require 'nyan-mode)
+(nyan-mode t)
+(nyan-start-animation)

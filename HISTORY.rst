@@ -16,4 +16,6 @@ __________
   安装magit 配置基本快捷键
 * helm-ag
   系统上安装ag helm-ag查询
-  
+0.0.3(2017-12-15)  
+* nyan-mode
+  rainbow cat scroll
