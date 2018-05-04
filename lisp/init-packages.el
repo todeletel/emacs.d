@@ -1,9 +1,7 @@
+
 (when (>= emacs-major-version 24)
- (add-to-list 'package-archives
-	     '("melpa" . "http://melpa.org/packages/") t)
-  )
-;;command lisp1
-(require 'cl)
+;; (add-to-list 'package-archives
+;;	     '("melpa" . "http://melpa.org/packages/") t)
 
 ;;add whateve packages you want here
 (defvar tristan/packages '(
@@ -27,12 +25,16 @@
 			   nyan-mode
 			   ;;org-trello
 			   ) "Default packages")
+
+
 (defun tristan/packages-installed-p ()
   (loop for pkg in tristan/packages
 	when (not (package-installed-p pkg))
 	do (return nil)
 	finally (return t)
 	))
+
+
 (unless (tristan/packages-installed-p)
   (message "%s" "Fucking Refreshing package database....")
   (package-refresh-contents)
@@ -71,3 +73,9 @@
        auto-mode-alist))
 
 (provide 'init-packages)
+
+
+
+
+
+
