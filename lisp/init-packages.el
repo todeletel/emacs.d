@@ -1,47 +1,47 @@
-;;hen (>= emacs-major-version 24)
- ;;add-to-list 'package-archives
-;;	       '("melpa" . "http://melpa.org/packages/") t)
-;;equire 'cl)
+(when (>= emacs-major-version 24)
+ (add-to-list 'package-archives
+	       '("melpa" . "http://melpa.org/packages/") t))
+(require 'cl)
 
 ;;add whateve packages you want here
 
-;;efvar tristan/packages '(
+(defvar tristan/packages '(
 ;;			   company
 ;;			   monokai-theme
 ;;			   hungry-delete
 ;;			   swiper
-;; 			   counsel
+ 			   counsel
 ;;			   smartparens
 			   ;;js2-mode
   			   ;;nodejs-repl
 ;;			   popwin
 			   ;;treemacs
 ;;			   shell-pop
-;;			   spacemacs-theme
+			   spacemacs-theme
 ;;			   spaceline
 ;;			   multi-term
 ;;			   elpy
 ;;			   magit
 ;;			   helm-ag
-;; 			   nyan-mode
+ 			   nyan-mode
 			   ;;org-trello
-;; 			   ) "Default packages")
+ 			   ) "Default packages")
 
 
-;;efun tristan/packages-installed-p ()
-;;(loop for pkg in tristan/packages
-;;	when (not (package-installed-p pkg))
-;;	do (return nil)
-;; 	finally (return t)
-;;	))
+(defun tristan/packages-installed-p ()
+(loop for pkg in tristan/packages
+	when (not (package-installed-p pkg))
+	do (return nil)
+ 	finally (return t)
+	))
 
 
-;;(unless (tristan/packages-installed-p)
- ;; (message "%s" "Fucking Refreshing package database....")
- ;; (package-refresh-contents)
- ;; (dolist (pkg tristan/packages)
-  ;;  (when (not (package-installed-p pkg))
-   ;; (package-install pkg))))
+(unless (tristan/packages-installed-p)
+  (message "%s" "Refreshing package database....")
+  (package-refresh-contents)
+  (dolist (pkg tristan/packages)
+  (when (not (package-installed-p pkg))
+   (package-install pkg))))
 
 ;;mode-auto-install end 
 
